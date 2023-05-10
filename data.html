@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title color="white">WhaleGM</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-spe-particles-component@1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-sky color="navy"></a-sky>
+            <a-camera position="0 0 30"></a-camera>
+            <a-entity position="0 1 0" 
+                spe-particles="
+                    color:red, orange, yellow;
+                    distribution:sphere;
+                    randomize-velocity:true;
+                    radius:10;
+                    particle-count:10000;
+                    velocity:5;
+                    velocity-spread:150;
+                    drag:1;
+                    max-age:2;
+                    duration:-100;
+                    blending:additive;
+                    active-multiplier:1000;
+                    size:1,1,1,0
+                "
+            ></a-entity>
+            <a-entity position="-50 1 0" 
+                spe-particles="
+                    color:red, orange, yellow;
+                    distribution:sphere;
+                    randomize-velocity:true;
+                    radius:10;
+                    particle-count:10000;
+                    velocity:5;
+                    velocity-spread:150;
+                    drag:1;
+                    max-age:2;
+                    duration:-100;
+                    blending:additive;
+                    active-multiplier:100000000000;
+                    size:1,1,1,0
+                "
+            ></a-entity>
+            <a-entity position="50 1 0" 
+                spe-particles="
+                    color:red, orange, yellow;
+                    distribution:sphere;
+                    randomize-velocity:true;
+                    radius:10;
+                    particle-count:10000;
+                    velocity:5;
+                    velocity-spread:150;
+                    drag:1;
+                    max-age:2;
+                    duration:-100;
+                    blending:additive;
+                    active-multiplier:1000;
+                    size:1,1,1,0
+                "
+            ></a-entity>
+            <a-entity id="ins1" position="81 25 0"
+                text="font: mozillavr; width:200; height: 200; color: #fcb103; value:WhaleGM">
+            </a-entity>
+            <a-entity id="ins1" position="81 -10 0"
+                text="font: mozillavr; width:200; height: 200; color: #fcb103; value:BedWars">
+            </a-entity>
+            <a-entity id="ins2" position="7.7 3.5 3"
+                text="font: mozillavr; width:19; height: 19; color: #fcb103; value:WhaleGM">
+            </a-entity>
+            <a-entity id="ins2" position="9.3 1.4 4"
+                text="font: mozillavr; width:19; height: 19; color: #fcb103; value:L">
+            </a-entity>
+            <a-entity>
+                <!--Head-->
+                <a-box color="tan" depth="2" height="5" width="4" position="0 8.5 0"></a-box>
+                <!--Body-->
+                <a-box color="white" depth="3" height="8" width="4" position="0 4 0"></a-box>
+                <!--Arms-->
+                <a-box color="white" depth="2" height="7" width="2" position="-3.2 4.5 -0.5" rotation="0 -15 -15"></a-box>
+                <a-box color="#fcb103" depth="2" height="0.75" width="2.2" position="-3.8 2 -0.5" rotation="0 -15 -15"></a-box>
+                <a-box color="#006e04" depth="2" height="0.75" width="2.2" position="-3.5 3.1 -0.5" rotation="0 -15 -15"></a-box>
+
+                <a-box color="white" depth="2" height="7" width="1.8" position="3.2 4.5 -0.5" rotation="0 15 15"></a-box>
+                <a-box color="#fcb103" depth="2" height="0.75" width="2.2" position="3.8 2 -0.5" rotation="0 15 15"></a-box>
+                <a-box color="#006e04" depth="2" height="0.75" width="2.2" position="3.5 3.1 -0.5" rotation="0 15 15"></a-box>
+                <!--Eyes-->
+                <a-box color="aqua" depth="1" height="0.5" width="0.5" position="-.5 9 0.75"></a-box>
+                <a-box color="white" depth="1" height="0.5" width="0.5" position="-1 9 0.75"></a-box>
+                <a-box color="aqua" depth="1" height="0.5" width="0.5" position=".5 9 0.75"></a-box>
+                <a-box color="white" depth="1" height="0.5" width="0.5" position="1 9 0.75"></a-box>
+                <!--Hair(8)-->
+                <a-box color="black" depth="1" height="3" width="0.5" position="-1.75 10.25 1.4"></a-box>
+                <a-box color="black" depth="1" height="2.7" width="0.5" position="-1.25 10.65 1"></a-box>
+                <a-box color="black" depth="1" height="2.5" width="0.5" position="-.75 10.4 1.4"></a-box>
+                <a-box color="black" depth="1" height="2.6" width="0.5" position="-.25 10.55 1"></a-box>
+                <a-box color="black" depth="1" height="3" width="0.5" position="1.75 10.25 1.4"></a-box>
+                <a-box color="black" depth="1" height="2.7" width="0.5" position="1.25 10.65 1"></a-box>
+                <a-box color="black" depth="1" height="2.5" width="0.5" position=".75 10.65 1.4"></a-box>
+                <a-box color="black" depth="1" height="2.6" width="0.5" position=".25 10.55 1"></a-box>
+                <!--Legs-->
+                <a-box color="black" depth="2" height="8" width="1.9" position="-1.1 -3 1"></a-box>
+                <a-box color="#fcb103" depth="2.2" height="0.7" width="2.1" position="-1.1 -5.75 1"></a-box>
+                <a-box color="#006e04" depth="2.2" height="0.7" width="2.1" position="-1.1 -4.5 1"></a-box>
+
+                <a-box color="black" depth="2" height="8" width="1.9" position="1.1 -3 1"></a-box>
+                <a-box color="#fcb103" depth="2.2" height="0.7" width="2.1" position="1.1 -5.75 1"></a-box>
+                <a-box color="#006e04" depth="2.2" height="0.7" width="2.1" position="1.1 -4.5 1"></a-box>
+
+                <!--Crown-->
+                <a-box color="#fcb103" depth="1" height="0.5" width="4" position="0 10.75 1.4"></a-box>
+                <a-box color="#fcb103" depth="1" height="0.75" width="0.5" position="-1.8 11 1.75"></a-box>
+                <a-box color="#fcb103" depth="1" height="0.75" width="0.5" position="-1 11 1.75"></a-box>
+                <a-box color="#fcb103" depth="1" height="0.75" width="0.5" position="-0.25 11 1.75"></a-box>
+                <a-box color="#fcb103" depth="1" height="0.75" width="0.5" position="0.25 11 1.75"></a-box>
+                <a-box color="#fcb103" depth="1" height="0.75" width="0.5" position="1 11 1.75"></a-box>
+                <a-box color="#fcb103" depth="1" height="0.75" width="0.5" position="1.8 11 1.75"></a-box>
+                <a-box color="aqua" depth="1" height="0.4" width="0.4" position="0 10.9 1.75"></a-box>
+                <!--Whale-->
+                <a-box color="#fcb103" depth="1.3" height="1.3" width="1.9" position="-0.2 5 1"></a-box>
+                <a-box color="black" depth="1.3" height="0.35" width="0.35" position="-0.5 5 1.3"></a-box>
+                <a-box color="#fcb103" depth="1.3" height="0.5" width="1" position="-0.2 5.75 1"></a-box>
+                <a-box color="#fcb103" depth="1.3" height="1.1" width="0.4" position="0.9 5.7 1"></a-box>
+                <a-box color="black" depth="1.3" height="0.25" width="1.9" position="-0.2 4.5 1.3"></a-box>
+                <a-box color="#fcb103" depth="1.3" height="0.35" width="0.35" position="0.6 6.4 1"></a-box>
+                <a-box color="#fcb103" depth="1.3" height="0.35" width="0.35" position="1.3 6.4 1"></a-box>
+                <a-box color="#fcb103" depth="1.3" height="1" width="0.35" position="-0.05 4.5 1.3"></a-box>
+                <!--Belt-->
+                <a-box color="#006e04" depth="3" height="1.5" width="4" position="0 1 1"></a-box>
+                <a-box color="#fcb103" depth="3" height="1.4" width="1.4" position="0 1 1.5"></a-box>
+                <a-box color="blue" depth="3" height="1" width="1" position="0 1 2"></a-box>
+
+
+
+
+
+
+
+            </a-entity>
+        </a-scene>
+    </body>
+</html>
